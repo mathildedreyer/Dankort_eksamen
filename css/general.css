@@ -1,0 +1,162 @@
+footer {
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.footer-container {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+.footer-left {
+  flex: 1;
+  background: #d9d9d9;
+  border-radius: 100px;
+  padding: 35px 50px 40px;
+  position: relative;
+  height: 450px;
+}
+
+.footer-left::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  width: 250px;
+  height: 130px;
+  background: #f2f2f2;
+  border-top-left-radius: 50px;
+}
+
+.footer-logo-box {
+  width: 255px;
+  height: 56px;
+  background: #fff;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 18px;
+  margin-top: 1em;
+}
+
+.logo-icon {
+  width: 54px;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 500;
+  color: #111;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 90px;
+  margin-top: 55px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  line-height: 1.5;
+  max-width: 180px;
+}
+
+.footer-column p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.arrow {
+  width: 12px;
+  height: 12px;
+  border-top: 1.8px solid #ff4a4a;
+  border-right: 1.8px solid #ff4a4a;
+  transform: rotate(45deg);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.support-btn {
+  position: absolute;
+  right: 45px;
+  bottom: 80px;
+  width: 140px;
+  height: 30px;
+  border: none;
+  border-radius: 999px;
+  background: #ef2b2d;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.footer-right {
+  width: 390px;
+  background: #ef1820;
+  border-radius: 100px 0px 100px 100px;
+  position: relative;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer-right::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  width: 150px;
+  height: 70px;
+  background: #f2f2f2;
+  border-bottom-left-radius: 50px;
+}
+
+.right-logo {
+  width: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-right h2 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.05;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+.footer a:hover {
+  color: #ef2b2d;
+}
