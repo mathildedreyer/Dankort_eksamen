@@ -21,6 +21,21 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+.header-inner1 {
+  position: relative;
+
+  background: #d9d9d9;
+  border-radius: 18px;
+  padding: 16px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -96,6 +111,32 @@
   font-size: 15px;
   font-weight: 500;
 }
+.streg {
+  font-size: 30px;
+}
+header img {
+  border-right: #000 solid 1px;
+  padding-right: 15px;
+}
+.stoet:hover:hover {
+  transform: scale(1);
+}
+.omos:hover {
+  transform: scale(1);
+}
+.effekt:hover {
+  transform: scale(1);
+}
+.nyhedsbrev:hover {
+  transform: scale(1);
+}
+.stoet:hover,
+.effekt:hover,
+.nyhedsbrev:hover,
+.omos:hover {
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
 
 img {
   width: 100%;
@@ -165,7 +206,7 @@ img {
   .stoet:hover:hover {
     transform: scale(1.1);
   }
-  .om-os:hover {
+  .omos:hover {
     transform: scale(1.1);
   }
   .effekt:hover {
@@ -174,6 +215,18 @@ img {
   .nyhedsbrev:hover {
     transform: scale(1.1);
   }
+  .stoet:hover,
+  .effekt:hover,
+  .nyhedsbrev:hover {
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  .streg {
+    font-size: 30px;
+  }
+  header img {
+    border-right: #000 solid 1px;
+    padding-right: 15px;
   img {
     width: 100%;
   }
