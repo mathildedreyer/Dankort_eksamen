@@ -1,0 +1,85 @@
+.ikoner {
+  background: linear-gradient(#c0cbca, #ffffff);
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Radley", serif;
+}
+
+.ikoner h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.gruppe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.ikon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 280px;
+  text-align: left;
+}
+
+.ikon h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.ikon p {
+  color: #333;
+  line-height: 1.4;
+}
+
+/* venstre opstilling */
+.ikon.venstre {
+  flex-direction: row;
+}
+
+/* højre opstilling */
+.ikon.højre {
+  flex-direction: row;
+}
+
+.ikon.venstre .ikon-tekst {
+  text-align: right;
+}
+
+.ikon.højre .ikon-tekst {
+  text-align: left;
+}
+.ikon-image2 {
+  width: 60px;
+  height: auto;
+}
+.ikon-image1 {
+  width: 200px;
+  height: auto;
+}
+.ikon-image {
+  width: 80px;
+  height: auto;
+}
+
+.ikon-tekst h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.3rem;
+}
+
+.ikon-tekst p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.streg {
+  width: 2px;
+  height: 160px;
+  background: black;
+}
