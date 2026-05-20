@@ -366,3 +366,120 @@ blockquote {
 .mathilde_faq_item.active .mathilde_faq_answer {
   max-height: 250px;
 }
+
+@media (max-width: 800px) {
+  .mathilde_hero_img {
+    height: 650px;
+  }
+
+  .mathilde_hero_text h1 {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+
+  .mathilde_corner_box {
+    padding: 16px 16px 0 16px;
+    border-top-left-radius: 40px;
+  }
+
+  .mathilde_stoet_btn {
+    font-size: 18px;
+    padding: 12px 45px;
+  }
+
+  blockquote {
+    font-size: 20px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .billede_dk_tal {
+    grid-template-columns: 1fr;
+
+    width: 90%;
+    padding: 30px;
+  }
+
+  .billede_dk_tal h2 {
+    font-size: 30px;
+  }
+
+  .mathilde_forside_billede_penge_gren {
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    padding-bottom: 20px;
+  }
+
+  .mathilde_penge_item,
+  .mathilde_gren_item {
+    width: 140px;
+  }
+
+  .mathilde_penge_ikon,
+  .mathilde_gren_ikon {
+    width: 140px;
+    height: 140px;
+  }
+
+  .mathilde_tegn {
+    width: 20px;
+    margin-top: 60px;
+  }
+
+  .mathilde_penge_tekst {
+    font-size: 13px;
+  }
+
+  .mathilde_forside_stot {
+    grid-template-columns: 1fr;
+  }
+
+  .mathilde_forside_stot_text h2 {
+    font-size: 30px;
+  }
+
+  .mathilde_apple_pay_box {
+    grid-template-columns: 1fr;
+
+    padding: 40px;
+  }
+
+  .mathilde_apple_pay_text h2 {
+    font-size: 32px;
+  }
+
+  .mathilde_apple_pay_text p {
+    font-size: 16px;
+  }
+
+  .mathilde_apple_pay_knap {
+    font-size: 16px;
+    padding: 12px 28px;
+  }
+
+  .mathilde_apple_pay_img {
+    max-width: 280px;
+  }
+
+  .mathilde_faq_section {
+    width: 90%;
+
+    padding: 35px;
+  }
+
+  .mathilde_faq_title {
+    font-size: 30px;
+  }
+
+  .mathilde_faq_question {
+    font-size: 14px;
+  }
+
+  .mathilde_faq_answer p {
+    width: 100%;
+    font-size: 14px;
+  }
+}
