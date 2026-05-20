@@ -1,1 +1,87 @@
+/* MOBIL (under 800px) */
 
+.om-os-section {
+  display: flex; /* ← gør at vertical-text står ved siden af */
+  flex-direction: row;
+  gap: 2rem;
+  background: #c0cbca;
+  padding: 40px 20px;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* Lodret tekst – samme som desktop, bare mindre */
+.vertical-text {
+  writing-mode: vertical-rl; /* ← korrekt lodret */
+  transform: rotate(180deg); /* ← samme som desktop */
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tekstindhold */
+.om-os-content {
+  max-width: 100%;
+}
+
+@media (min-width: 800px) {
+  /* Grøn boks */
+  .om-os-section {
+    display: flex;
+    gap: 7rem;
+    background: #c0cbca;
+    padding: 80px 10vw;
+    align-items: flex-start;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  /* Lodret tekst */
+  .vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 55px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    margin-bottom: 1em;
+    margin-top: 3em;
+  }
+
+  .newsletter-section {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    padding: 80px 10vw;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+
+  /* billede venstre */
+  .newsletter-image {
+    flex: 1;
+  }
+
+  .newsletter-image img {
+    max-height: 620px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* tekst højre */
+  .newsletter-content {
+    flex: 1.1;
+    padding-right: 10vw;
+  }
+}
