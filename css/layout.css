@@ -1,4 +1,7 @@
-/* header */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
 .top-header {
   position: absolute;
   top: 16px;
