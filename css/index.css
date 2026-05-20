@@ -11,9 +11,13 @@
 
 .mathilde_hero_text {
   position: absolute;
-  top: 42%;
-  left: 8%;
-  right: 8%;
+
+  top: 40%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 100%;
 
   color: white;
   text-align: center;
@@ -96,9 +100,7 @@
   font-family: sans-serif;
 
   padding: 14px 120px;
-
   border-radius: 999px;
-
   transition: 0.2s;
 }
 
@@ -106,10 +108,85 @@ blockquote {
   font-size: 30px;
   font-weight: bold;
   font-style: italic;
-  padding-left: 50px;
 
+  padding-left: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
 
   color: rgb(49, 47, 28);
+}
+
+.billede_dk_tal {
+  background-color: #c8d3d0;
+  border-radius: 50px;
+
+  margin: 80px auto;
+  padding: 50px;
+
+  width: 85%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.billede_dk_tal h2 {
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.billede_dk_tal p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.billede_dk_tal img {
+  width: 100%;
+  border-radius: 35px;
+  display: block;
+}
+
+.mathilde_forside_billede_penge_gren {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  width: 90%;
+  margin: 80px auto;
+}
+
+.mathilde_penge_item,
+.mathilde_gren_item {
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mathilde_penge_ikon {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.mathilde_gren_ikon {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.mathilde_tegn {
+  width: 35px;
+  margin-top: 105px;
+}
+
+.mathilde_penge_tekst {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.4;
+  min-height: 50px;
 }
