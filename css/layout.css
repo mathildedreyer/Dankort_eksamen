@@ -246,19 +246,17 @@ p {
   header img {
     border-right: #000 solid 1px;
     padding-right: 15px;
-  img {
-    width: 100%;
   }
 
-    .hero-content {
-      position: absolute;
-      left: 35%;
-      top: 70%;
-      transform: translate(-50%, -50%);
-      z-index: 5;
-      color: black;
-      text-align: left;
-    }
+  .hero-content {
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: black;
+    text-align: left;
+  }
 
   .hero-content h1 {
     font-size: 64px;
