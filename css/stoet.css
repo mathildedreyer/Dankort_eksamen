@@ -1,0 +1,228 @@
+.ikoner {
+  background: linear-gradient(#ffffff, #c0cbca, #ffffff);
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Radley", serif;
+}
+
+.ikoner h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.gruppe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.ikon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 280px;
+  text-align: left;
+}
+
+.ikon h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.ikon p {
+  color: #333;
+  line-height: 1.4;
+}
+
+/* venstre opstilling */
+.ikon.venstre {
+  flex-direction: row;
+}
+
+/* højre opstilling */
+.ikon.højre {
+  flex-direction: row;
+}
+
+.ikon.venstre .ikon-tekst {
+  text-align: right;
+}
+
+.ikon.højre .ikon-tekst {
+  text-align: left;
+}
+.ikon-image2 {
+  width: 60px;
+  height: auto;
+}
+.ikon-image1 {
+  width: 200px;
+  height: auto;
+}
+.ikon-image {
+  width: 80px;
+  height: auto;
+}
+
+.ikon-tekst h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.3rem;
+}
+
+.ikon-tekst p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.streg {
+  width: 2px;
+  height: 160px;
+  background: black;
+}
+
+h1-cecilie {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 4em;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.billedetekst {
+  text-align: center;
+  font-family: "Radley", serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+.billedetekst h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.billedetekst p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.billedegrid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.billede-box {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+}
+
+.billede-box img {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: 0.4s ease;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s ease;
+  color: white;
+  padding: 2rem;
+}
+
+.billede-box:hover img {
+  filter: blur(4px) brightness(60%);
+  transform: scale(1.05);
+}
+
+.billede-box:hover .overlay {
+  opacity: 1;
+}
+.knap {
+  display: inline-block;
+  background-color: #312f1c;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.knap:hover {
+  background-color: #444127;
+  transform: scale(1.03);
+}
+@media (min-width: 800px) {
+  h1-cecilie {
+    font-size: 30px;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+  }
+
+  .billedegrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  .billede-box img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: 0.4s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    opacity: 0;
+    transition: 0.4s ease;
+
+    color: white;
+    padding: 2rem;
+  }
+
+  .billede-box:hover img {
+    filter: blur(4px) brightness(60%);
+    transform: scale(1.05);
+  }
+
+  .billede-box:hover .overlay {
+    opacity: 1;
+  }
+}
