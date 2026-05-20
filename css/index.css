@@ -190,3 +190,47 @@ blockquote {
   line-height: 1.4;
   min-height: 50px;
 }
+
+.mathilde_forside_stot_section {
+  width: 90%;
+  margin: 100px auto;
+}
+
+.mathilde_forside_stot {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.mathilde_forside_stot_img {
+  width: 100%;
+  border-radius: 35px;
+  display: block;
+}
+
+.mathilde_forside_stot_text h2 {
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.mathilde_forside_stot_text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.mathilde_forside_stot_knap {
+  display: inline-block;
+
+  background-color: rgb(49, 47, 28);
+  color: white;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  padding: 14px 45px;
+  border-radius: 999px;
+
+  margin-top: 20px;
+}
