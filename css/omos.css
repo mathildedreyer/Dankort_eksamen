@@ -29,6 +29,160 @@
   max-width: 100%;
 }
 
+/* Nyhedsbrev */
+
+.newsletter-section {
+  align-items: flex-start;
+
+  gap: 4rem;
+  margin-top: 3em;
+}
+
+.newsletter-image img {
+  width: 100%;
+  max-height: 720px;
+  object-fit: cover;
+}
+
+/* Tekstkolonne */
+.newsletter-content {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding-right: 4vw;
+  margin-left: 1.3em;
+}
+
+/* Brødtekst */
+.newsletter-content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 1.75;
+  margin: 0;
+  margin-top: -1em;
+}
+.newsletter-content h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 550;
+  margin: 25px 0 10px 0;
+
+  letter-spacing: -0.3px;
+}
+
+/* CTA-knap */
+.faellesskab-cta {
+  background: #312f1c;
+  color: white;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  margin-top: 14px;
+  font-family: "Raleway", sans-serif;
+  margin-left: auto;
+  margin-right: 9.5em;
+  margin-bottom: 3em;
+}
+
+.faellesskab-cta:hover {
+  background: #4a4830;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(49, 47, 28, 0.35);
+}
+
+/* Nyhedsbrev fordele */
+
+.nyhedsbrev-fordele {
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: -1em;
+}
+
+/* h3 med streger */
+.nyhedsbrev-fordele h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 550;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Selve stregen */
+.nyhedsbrev-fordele .streg {
+  display: block;
+  height: 2px;
+  width: 2em;
+  background-color: #1a1a1a;
+  opacity: 0.2;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
+/* Grid med 3 elementer */
+
+.nyhedsbrev-fordele {
+  border-radius: 30px;
+  text-align: center;
+}
+
+/* LISTE: bokse under hinanden */
+.fordele-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 40px; /* giver luft under din h3 + streger */
+}
+
+/* Gør hvert punkt til en lille boks */
+.fordel-element {
+  background: #c0cbca;
+  padding: 25px 20px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row; /* ← ikon til venstre, tekst til højre */
+  align-items: flex-start; /* ← så teksten starter øverst */
+  gap: 1.5rem;
+  text-align: left; /* ← teksten skal ikke centreres */
+}
+.fordel-tekst {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* Ikoner */
+.fordel-element img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* H4 titler */
+.fordel-element h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Tekst */
+.fordel-element p {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+
+  margin: 0;
+}
+
 @media (min-width: 800px) {
   /* Grøn boks */
   .om-os-section {
@@ -64,12 +218,13 @@
   }
 
   /* Nyhedsbrev */
-  /* Layout for hele sektionen */
+
   .newsletter-section {
     display: flex;
     align-items: center;
     gap: 4rem;
     margin-top: 3em;
+    flex-direction: row; /* ← DENNE LINJE FIXER ALT */
   }
 
   /* Billede */
@@ -87,7 +242,6 @@
 
   /* Tekstkolonne */
   .newsletter-content {
-    flex: 1.1;
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
