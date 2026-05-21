@@ -226,6 +226,7 @@ p {
   }
   .stoet:hover,
   .effekt:hover,
+  .omos:hover,
   .nyhedsbrev:hover {
     font-weight: 600;
     transition: all 0.2s ease;
@@ -233,6 +234,7 @@ p {
   .streg {
     font-size: 30px;
   }
+
   header img {
     border-right: #000 solid 1px;
     padding-right: 15px;
