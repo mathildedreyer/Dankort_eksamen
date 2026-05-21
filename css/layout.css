@@ -1,9 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
-/* header */
 .top-header {
   position: absolute;
   top: 16px;
@@ -238,6 +236,7 @@ p {
   header img {
     border-right: #000 solid 1px;
     padding-right: 15px;
+    width: 100%;
   }
 
   .hero-content {

@@ -2,9 +2,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/forms.css" />
+
     <script src="js/forms.js" defer></script>
 
     <title>Nyhedsbrev</title>
@@ -13,103 +15,142 @@
   <body>
     <header class="top-header">
       <div class="header-inner1">
-        <a href="/" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/DK_Logo_CMYK 2.svg" alt="Øremærket Logo" />
-          <span> Øremærket</span>
+          <span>Øremærket</span>
         </a>
+
+        <nav class="nav" id="navMenu">
+          <a href="stoet.html">Sådan støtter du</a>
+          <a href="effekt.html">Din effekt</a>
+          <a href="omos.html">Om os</a>
+          <a href="forms.html">Tilmeld vores nyhedsbrev</a>
+        </nav>
 
         <button class="burger" id="burgerBtn">
           <span></span>
           <span></span>
           <span></span>
         </button>
-      </header>
-
-        <nav class="nav" id="navMenu">
-          <a class="stoet" href="stoet.html">Sådan støtter du</a>
-          <a class="effekt" href="effekt.html">Din effekt</a>
-          <a class="omos" href="omos.html">Om os</a>
-          <a class="nyhedsbrev" href="forms.html">Tilmeld nyhedsbrev</a>
-        </nav>
       </div>
+    </header>
 
-    <h1>Tilmeld dig vores nyhedsbrev</h1>
-    <p class="p">Få adgang til dine fordele i dag</p>
+    <main>
+      <section class="newsletter_hero_mathilde">
+        <h1 class="newsletter_title_mathilde">Tilmeld dig vores Nyhedsbrev</h1>
 
-    <section class="tilmelding">
-      <h2>Tilmeld dig Dankort Øremærket opdateringer</h2>
+        <p class="newsletter_text_mathilde">Få adgang til dine fordele i dag</p>
+      </section>
 
-      <form>
-        <div class="input-row">
-          <input type="text" placeholder="Fornavn" />
-          <input type="text" placeholder="Efternavn" />
-        </div>
+      <section class="tilmelding_mathilde">
+        <form class="form_mathilde">
+          <label class="label_mathilde">
+            Fornavn
+            <input class="input_mathilde" type="text" />
+          </label>
 
-        <div class="input-row">
-          <input type="email" placeholder="Email" />
-          <div class="phone-field">
-            <span>DK (+45)</span>
-            <input1 type="tel" placeholder="Telefonnummer" />
-          </div>
-        </div>
+          <label class="label_mathilde">
+            Efternavn
+            <input class="input_mathilde" type="text" />
+          </label>
 
-        <label class="checkbox">
-          <input type="checkbox" />
-          <span>
-            Ja tak – send mig opdateringer om, hvordan mine betalinger bliver til reel impact i naturen. Som en del af ordningen modtager jeg også udvalgte fordele, inspiration og indhold, der gør det endnu mere relevant at bruge Dankort.
-          </span>
-        </label>
+          <label class="label_mathilde">
+            E-mailadresse
+            <input class="input_mathilde" type="email" />
+          </label>
 
-        <p class="note">Jeg accepterer at modtage opdateringer om donationer, projekter og fordele via e-mail (og evt. sms). Jeg kan til enhver tid ændre mine præferencer eller afmelde mig igen.</p>
+          <label class="label_mathilde">
+            Mobilnummer
 
-        <button class="submit-btn">Tilmeld nu</button>
-      </form>
-    </section>
+            <div class="phone_field_mathilde">
+              <span class="country_code_mathilde">DK (+45)</span>
+
+              <input class="input_mathilde phone_input_mathilde" type="tel" />
+            </div>
+          </label>
+
+          <label class="checkbox_mathilde">
+            <input class="checkbox_input_mathilde" type="checkbox" />
+
+            <strong class="checkbox_title_mathilde">
+              Tilmeld dig Dankort Øremærket opdateringer
+            </strong>
+          </label>
+
+          <p class="small_text_mathilde">
+            Ja tak – send mig opdateringer om, hvordan mine betalinger bliver
+            til reel impact i naturen.
+          </p>
+
+          <p class="small_text_mathilde">
+            Jeg accepterer at modtage opdateringer om donationer, projekter og
+            fordele via e-mail og evt. sms. Jeg kan til enhver tid ændre mine
+            præferencer eller afmelde mig igen.
+          </p>
+
+          <button class="submit_btn_mathilde" type="submit">Tilmeld nu</button>
+        </form>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-left">
           <div class="footer-logo-box">
-            <img src=".." alt="logo" class="logo-icon" />
+            <img src="img/DK_Logo_CMYK 2.svg" alt="logo" class="logo-icon" />
+
             <div>|</div>
+
             <span class="logo-text">Øremærket</span>
           </div>
+
           <div class="footer-columns">
             <div class="footer-column">
               <h4>Dankort</h4>
+
               <a href="omos.html">
                 <span class="arrow"></span>
                 Om dankort
               </a>
+
               <a href="stoet.html">
                 <span class="arrow"></span>
                 Sådan støtter du
               </a>
+
               <a href="forms.html">
                 <span class="arrow"></span>
                 Tilmeld dig vores nyhedsbrev
               </a>
             </div>
+
             <div class="footer-column">
               <h4>Erhverv</h4>
+
               <a href="omos.html">
                 <span class="arrow"></span>
                 Dine fordele
               </a>
+
               <a href="stoet.html">
                 <span class="arrow"></span>
                 Gør en forskel
               </a>
             </div>
+
             <div class="footer-column">
               <h4>Support</h4>
+
               <p>Email: DKnaturservice@gmail.dk</p>
             </div>
           </div>
+
           <button class="support-btn">STØT</button>
         </div>
+
         <div class="footer-right">
-          <img src=".." alt="logo" class="right-logo" />
+          <img src="img/DK_Logo_CMYK 2.svg" alt="logo" class="right-logo" />
+
           <h2>
             En betaling, en øre, <br />
             en forskel.
