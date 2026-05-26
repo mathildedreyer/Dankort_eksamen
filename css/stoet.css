@@ -6,7 +6,7 @@
 }
 
 .ikoner h2 {
-  font-size: 2rem;
+  font-size: 40px;
   margin-bottom: 2rem;
   color: #333;
 }
@@ -41,18 +41,20 @@
 /* venstre opstilling */
 .ikon.venstre {
   flex-direction: row;
+  margin-left: -15em;
 }
 
 /* højre opstilling */
 .ikon.højre {
   flex-direction: row;
+  margin-left: -10em;
 }
 
 .ikon.venstre .ikon-tekst {
   text-align: right;
 }
 
-.ikon.højre .ikon-tekst {
+.ikon.højre .ikon-tekst2 {
   text-align: left;
 }
 .ikon-image2 {
@@ -70,14 +72,35 @@
 
 .ikon-tekst h3 {
   margin: 0 0 0.3rem 0;
-  font-size: 1.3rem;
+  font-size: 2rem;
+}
+.ikon-tekst2 h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 2rem;
 }
 
 .ikon-tekst p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   line-height: 1.4;
+  width: 200px;
 }
+
+.ikon-tekst2 p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  width: 200px;
+}
+.ikon-tekst2 {
+  border-left: #000 1px solid;
+  padding-left: 2em;
+}
+.ikon-tekst {
+  border-right: #000 1px solid;
+  padding-right: 2em;
+}
+
 .streg {
   width: 2px;
   height: 160px;
@@ -93,6 +116,13 @@ h1-cecilie {
   position: absolute;
   left: 50%;
   top: 50%;
+}
+
+.citatcecilie {
+  font-style: italic;
+  opacity: 0.5;
+  margin-top: -0em;
+  margin-bottom: 2em;
 }
 
 .billedetekst {
@@ -143,8 +173,8 @@ h1-cecilie {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   opacity: 0;
   transition: 0.4s ease;
   color: white;
@@ -202,17 +232,13 @@ h1-cecilie {
   .overlay {
     position: absolute;
     inset: 0;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
+    align-items: flex-start;
+    text-align: left;
     opacity: 0;
     transition: 0.4s ease;
-
     color: white;
     padding: 2rem;
   }

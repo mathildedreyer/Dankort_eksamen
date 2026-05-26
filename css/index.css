@@ -108,12 +108,12 @@ blockquote {
   font-size: 25px;
   font-weight: bold;
   font-style: italic;
-
   padding-left: 90px;
   padding-top: 50px;
   padding-bottom: 50px;
-
+  opacity: 0.5;
   color: rgb(49, 47, 28);
+  margin-top: 3em;
 }
 
 .billede_dk_tal {
