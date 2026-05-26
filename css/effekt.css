@@ -1,6 +1,7 @@
 body {
   background-color: #f2f2f2;
 }
+
 .video-box {
   position: relative;
   width: 100%;
@@ -30,8 +31,9 @@ body {
   position: absolute;
   right: 0;
   bottom: -40px;
-  height: 100px;
+  height: 120px;
   width: 200px;
+
   background: #f2f2f2;
   border-top-left-radius: 40px;
 }
@@ -47,6 +49,264 @@ body {
   font-size: clamp(14px, 2vw, 20px);
   max-width: 80vw;
   word-wrap: break-word;
+}
+
+.benefits h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 80px;
+  margin-top: 2em;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 180px 1fr;
+  gap: 30px;
+  align-items: start;
+  margin: 3em;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 150px;
+  object-fit: cover;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.bille {
+  margin-top: 2em;
+}
+
+.content h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.content p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.center-svg {
+  display: flex;
+  justify-content: center;
+}
+
+.center-svg img {
+  width: 200px;
+  height: 40em;
+}
+
+/* sidste del */
+
+.nature-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.nature-text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.nature-text h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nature-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.nature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  justify-content: center;
+  gap: 20px;
+}
+
+/* popup */
+
+.nature-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.nature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.nature-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+}
+.nature-card2 {
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.nature-card2 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.nature-card2 p {
+  line-height: 1.5;
+  margin-left: 1em;
+}
+
+.nature-name {
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  left: 18px;
+  right: 18px;
+  color: white;
+  font-size: 15px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  margin: 4px 0;
+}
+
+.name {
+  position: absolute;
+  bottom: 530px;
+  left: 18px;
+  right: 18px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nature-card2 h2 {
+  margin-left: 0.7em;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup .nature-card2 {
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.popup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.popup-info {
+  background: #c0cbca;
+  padding: 20px;
+  margin-left: 4em;
+}
+
+.popup-intro {
+  margin: 2em 0 0 2em;
+}
+.info-block {
+  margin-top: 3em;
+  margin-left: 1em;
+}
+
+.popup-info-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 3.9em;
+}
+
+.popup-info p {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.popup-info img {
+  width: 50px;
+  height: 50px;
+  margin-top: -3.5em;
+}
+
+.filter-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  z-index: 9999;
+}
+.filter-option {
+  border: #2d2b16 solid 1px;
+  padding: 7px 15px;
+  border-radius: 5em;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.filter-option:hover {
+  background: #2d2b16;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+.filter-btn {
+  display: flex;
+  background: #2d2b16;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: auto;
+  margin-bottom: 3em;
+}
+.filter-btn:hover {
+  background: #727272;
+}
+
+.filter-container {
+  position: relative;
 }
 
 @media (min-width: 800px) {
@@ -114,8 +374,6 @@ body {
   .layout {
     display: grid;
     grid-template-columns: 1fr 180px 1fr;
-    gap: 50px;
-    align-items: start;
     margin: 3em;
   }
 
@@ -130,20 +388,30 @@ body {
   }
 
   .left-column {
-    margin-left: 5em;
+    margin-left: clamp(0em, 5vw, 5em);
     margin-right: -0em;
   }
 
+  .right-column {
+    margin-right: clamp(0em, 5vw, 5em);
+    margin-left: 0em;
+  }
   .content {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
+  .lastimg {
+    position: relative;
+    top: -6em;
+  }
+
   .content img {
     width: 100%;
     border-radius: 150px;
     object-fit: cover;
+    margin-bottom: 2em;
   }
 
   .content h2 {
@@ -166,14 +434,11 @@ body {
     height: 52em;
   }
   .tekst {
-    margin-left: 2em;
-    margin-top: 4em;
+    margin-left: 1em;
+    margin-top: 2em;
   }
   .lasttekst {
     margin-top: -2em;
-  }
-  .lastimg {
-    margin-top: -4em;
   }
 
   /* sidste del */
@@ -202,20 +467,6 @@ body {
     color: #444;
   }
 
-  .filter-btn {
-    display: flex;
-    background: #2d2b16;
-    color: white;
-    border: none;
-    padding: 14px 32px;
-    border-radius: 999px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-left: auto;
-    margin-bottom: 3em;
-  }
-
   .nature-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -223,98 +474,6 @@ body {
   }
 
   .nature-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 50px;
-  }
-
-  .nature-card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-  }
-
-  .nature-card p {
-    position: absolute;
-    text-align: center;
-    bottom: 20px;
-    left: 18px;
-    right: 18px;
-    color: white;
-    font-size: 15px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  /* pop-up boks */
-
-  .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.6);
-
-    display: none;
-
-    justify-content: center;
-    align-items: center;
-
-    z-index: 1000;
-  }
-
-  .popup-content {
-    background: white;
-    padding: 40px;
-    width: 500px;
-    border-radius: 30px;
-    position: relative;
-  }
-
-  #closePopup {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-
-    font-size: 35px;
-    cursor: pointer;
-  }
-
-  .nature-card {
-    cursor: pointer;
-  }
-
-  /* popup */
-  .popup {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.35); /* gennemsigtig mørk baggrund */
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-
-  .popup-content {
-    background: white;
-    width: 90%;
-    max-width: 600px;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    max-height: 85vh;
-    overflow-y: auto;
-    position: relative;
-  }
-
-  #closePopup {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 28px;
     cursor: pointer;
   }
 }
