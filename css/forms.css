@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 .newsletter_hero_mathilde {
   text-align: center;
   margin-top: 140px;
@@ -12,14 +16,14 @@
 
 .newsletter_title_mathilde {
   font-family: "Raleway", sans-serif;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
 .newsletter_text_mathilde {
   font-family: "Raleway", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .tilmelding_mathilde {

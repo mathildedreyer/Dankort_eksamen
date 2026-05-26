@@ -73,6 +73,7 @@
 
 /* CTA-knap */
 .faellesskab-cta {
+  display: block;
   background: #312f1c;
   color: white;
   padding: 12px 36px;
@@ -84,7 +85,7 @@
   margin-top: 14px;
   font-family: "Raleway", sans-serif;
   margin-left: auto;
-  margin-right: 9.5em;
+  margin-right: 0;
   margin-bottom: 3em;
 }
 
