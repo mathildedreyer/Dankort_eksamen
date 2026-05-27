@@ -15,7 +15,7 @@
 
 .video-text {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   left: 20px;
   color: white;
   font-size: 25px;
@@ -304,7 +304,7 @@
 
   .video-text {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 20px;
     color: white;
     font-size: 35px;
