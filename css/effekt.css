@@ -3,7 +3,7 @@
   width: 100%;
   height: 550px;
   overflow: hidden;
-  border-radius: 20px 20px 0px 20px;
+  border-radius: 20px;
 }
 
 .video-box video {
@@ -20,30 +20,6 @@
   color: white;
   font-size: 25px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.video-box::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 120px;
-  width: 200px;
-  background-color: #fff;
-  border-top-left-radius: 40px;
-}
-
-.video-box {
-  position: relative;
-}
-
-.quote-text {
-  position: absolute;
-  bottom: 335px;
-  right: 15px;
-  word-wrap: break-word;
-  font-style: italic;
-  opacity: 0.5;
 }
 
 .benefits h1 {
@@ -316,7 +292,7 @@
     width: 100%;
     height: 550px;
     overflow: hidden;
-    border-radius: 20px 20px 0px 20px;
+    border-radius: 20px;
   }
 
   .video-box video {
@@ -333,31 +309,6 @@
     color: white;
     font-size: 35px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-  .video-box::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 120px;
-    width: 250px;
-    background: #fff;
-  }
-
-  .video-box {
-    position: relative;
-  }
-
-  .quote-text {
-    position: absolute;
-    /* bottom: 250px;
-    right: 30px; */
-    font-size: clamp(14px, 2vw, 20px);
-    max-width: 80vw;
-    word-wrap: break-word;
-    font-style: italic;
-    opacity: 0.5;
   }
 
   /* midterdel */
