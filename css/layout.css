@@ -50,6 +50,8 @@ body {
   width: auto;
 }
 
+/* BURGER */
+
 .burger {
   width: 42px;
   height: 42px;
@@ -67,8 +69,10 @@ body {
   height: 2px;
   background: #000;
   border-radius: 10px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
+
+/* Burger animation */
 
 .burger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
@@ -81,6 +85,8 @@ body {
 .burger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
+
+/* NAVIGATION */
 
 .nav {
   width: 100%;
@@ -97,41 +103,42 @@ body {
 .nav a {
   text-decoration: none;
   color: #000;
-
   font-family: sans-serif;
   font-size: 15px;
   font-weight: 500;
+  display: inline-block;
+  transition:
+    transform 0.2s ease,
+    font-weight 0.2s ease;
+  will-change: transform;
 }
+
+/* Hover mobile */
+
+.stoet:hover,
+.effekt:hover,
+.omos:hover,
+.nyhedsbrev:hover {
+  transform: scale(1.03);
+  font-weight: 600;
+}
+
+/* Diverse */
+
 .streg {
   font-size: 30px;
 }
+
 header img {
   border-right: #000 solid 1px;
   padding-right: 15px;
-}
-.stoet:hover:hover {
-  transform: scale(0.7);
-}
-.omos:hover {
-  transform: scale(0.7);
-}
-.effekt:hover {
-  transform: scale(0.7);
-}
-.nyhedsbrev:hover {
-  transform: scale(0.7);
-}
-.stoet:hover,
-.effekt:hover,
-.nyhedsbrev:hover,
-.omos:hover {
-  font-weight: 600;
-  transition: all 0.2s ease;
 }
 
 img {
   width: 100%;
 }
+
+/* HERO */
 
 .hero {
   position: relative;
@@ -147,14 +154,6 @@ img {
   display: block;
 }
 
-.top-header {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  z-index: 10;
-}
-
 .hero-content {
   position: absolute;
   left: 35%;
@@ -165,7 +164,8 @@ img {
   text-align: left;
 }
 
-/* tekst */
+/* TYPOGRAFI */
+
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
@@ -187,8 +187,9 @@ p {
   line-height: 1.8;
 }
 
+/* DESKTOP */
+
 @media (min-width: 800px) {
-  /* header */
   .top-header {
     top: 20px;
     left: 24px;
@@ -212,43 +213,21 @@ p {
     gap: 32px;
     margin-top: 0;
   }
-  .stoet:hover:hover {
-    transform: scale(1.1);
-  }
-  .omos:hover {
-    transform: scale(1.1);
-  }
-  .effekt:hover {
-    transform: scale(1.1);
-  }
-  .nyhedsbrev:hover {
-    transform: scale(1.1);
-  }
+
+  /* Hover desktop */
+
   .stoet:hover,
   .effekt:hover,
   .omos:hover,
   .nyhedsbrev:hover {
+    transform: scale(1.08);
     font-weight: 600;
-    transition: all 0.2s ease;
-  }
-  .streg {
-    font-size: 30px;
   }
 
   header img {
     border-right: #000 solid 1px;
     padding-right: 15px;
     width: 100%;
-  }
-
-  .hero-content {
-    position: absolute;
-    left: 35%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    color: black;
-    text-align: left;
   }
 
   .hero-content h1 {
