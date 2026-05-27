@@ -29,8 +29,7 @@
   bottom: -40px;
   height: 120px;
   width: 200px;
-
-  background: #f2f2f2;
+  background-color: #fff;
   border-top-left-radius: 40px;
 }
 
@@ -283,7 +282,7 @@
   cursor: pointer;
 }
 .filter-option:hover {
-  background: #2d2b16;
+  background: #4a4830;
   color: white;
 }
 
@@ -304,7 +303,7 @@
   margin-bottom: 3em;
 }
 .filter-btn:hover {
-  background: #727272;
+  background: #4a4830;
 }
 
 .filter-container {
@@ -343,9 +342,7 @@
     bottom: -40px;
     height: 120px;
     width: 250px;
-
-    background: #f2f2f2;
-    border-top-left-radius: 40px;
+    background: #fff;
   }
 
   .video-box {
