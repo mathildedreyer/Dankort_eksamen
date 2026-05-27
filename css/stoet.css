@@ -2,7 +2,7 @@
   background: linear-gradient(#ffffff, #c0cbca, #ffffff);
   padding: 4rem 2rem;
   text-align: center;
-  font-family: "Radley", serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .ikoner h2 {
@@ -33,11 +33,13 @@
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #000;
+  font-family: "Raleway", sans-serif;
 }
 
 .ikon p {
   color: #333;
   line-height: 1.4;
+  font-family: "Raleway", sans-serif;
 }
 
 /* venstre opstilling */
@@ -78,10 +80,12 @@
 .ikon-tekst h3 {
   margin: 0 0 0.3rem 0;
   font-size: 2rem;
+  font-family: "Raleway", sans-serif;
 }
 .ikon-tekst2 h3 {
   margin: 0 0 0.3rem 0;
   font-size: 2rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .ikon-tekst p {
@@ -90,6 +94,7 @@
   line-height: 1.4;
   width: 200px;
   text-align: left;
+  font-family: "Raleway", sans-serif;
 }
 
 .ikon-tekst2 p {
@@ -97,14 +102,17 @@
   font-size: 1.2rem;
   line-height: 1.4;
   width: 200px;
+  font-family: "Raleway", sans-serif;
 }
 .ikon-tekst2 {
   border-left: #000 1px solid;
   padding-left: 2em;
+  font-family: "Raleway", sans-serif;
 }
 .ikon-tekst {
   border-right: #000 1px solid;
   padding-right: 2em;
+  font-family: "Raleway", sans-serif;
 }
 
 .streg {
@@ -128,7 +136,7 @@
 
 .billedetekst {
   text-align: center;
-  font-family: "Radley", serif;
+  font-family: "Raleway", sans-serif;
   max-width: 800px;
   margin: 0 auto;
   padding: 4rem 2rem;
