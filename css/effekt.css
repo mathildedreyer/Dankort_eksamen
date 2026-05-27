@@ -351,7 +351,7 @@
 
   .quote-text {
     position: absolute;
-    bottom: 190px;
+    bottom: 250px;
     right: 30px;
     font-size: clamp(14px, 2vw, 20px);
     max-width: 80vw;
