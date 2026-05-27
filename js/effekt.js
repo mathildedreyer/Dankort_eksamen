@@ -41,7 +41,6 @@ function renderCards(data) {
         <div class="nature-card2">
           <div>
             <img src="${item.img}" alt="" />
-            <div class="name">${item.navn}</div>
           </div>
           <div class="popup-grid">
             <div class="popup-intro">
