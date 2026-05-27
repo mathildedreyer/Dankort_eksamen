@@ -299,6 +299,10 @@ blockquote {
   margin-top: 20px;
 }
 
+.mathilde_apple_pay_knap:hover {
+  background: #ea676c;
+}
+
 .mathilde_apple_pay_img_box {
   display: flex;
   justify-content: center;
