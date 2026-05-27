@@ -104,6 +104,10 @@
   transition: 0.2s;
 }
 
+.mathilde_stoet_btn:hover {
+  background: #ea676c;
+}
+
 blockquote {
   font-size: 25px;
   font-weight: bold;
@@ -234,6 +238,11 @@ blockquote {
 
   margin-top: 20px;
 }
+
+.mathilde_forside_stot_knap:hover {
+  background: #4a4830;
+}
+
 .mathilde_apple_pay_section {
   width: 95%;
   margin: 120px auto;
