@@ -15,7 +15,7 @@
 
 .video-text {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   left: 20px;
   color: white;
   font-size: 25px;
@@ -39,8 +39,8 @@
 
 .quote-text {
   position: absolute;
-  bottom: 190px;
-  right: 9px;
+  bottom: 335px;
+  right: 15px;
   word-wrap: break-word;
   font-style: italic;
   opacity: 0.5;
@@ -328,7 +328,7 @@
 
   .video-text {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 20px;
     color: white;
     font-size: 35px;
@@ -351,8 +351,8 @@
 
   .quote-text {
     position: absolute;
-    bottom: 250px;
-    right: 30px;
+    /* bottom: 250px;
+    right: 30px; */
     font-size: clamp(14px, 2vw, 20px);
     max-width: 80vw;
     word-wrap: break-word;
